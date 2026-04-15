@@ -1,0 +1,47 @@
+# .iba.yaml - IBA Mythos Governor · VulnOps Intent Certificate
+# Patent GB2603013.0 (Pending) · intentbound.com
+#
+# PA1: scan, read, identify — permitted within declared repo
+# PA6: report, write — internal destination only
+# PA11: exploit, production, chain — TERMINATE immediately
+
+intent:
+  description: "Scan auth-service for CVEs and generate internal report only. No production. No external reporting. No exploit execution."
+
+scope:
+  - scan
+  - read
+  - identify
+  - cve
+  - vuln
+  - report
+  - write
+  - internal
+  - memory
+  - token
+  - auth-service
+
+denied:
+  - external
+  - full estate
+  - all repositories
+  - competitor
+  - public database
+  - secret
+  - credential
+
+default_posture: DENY_ALL
+
+kill_threshold: "exploit | chain vulnerability | privilege escalation | production_deploy | production-deployment | execute exploit"
+
+limits:
+  repository: "auth-service only"
+  report_destination: "internal security team only"
+
+temporal_scope:
+  hard_expiry: "2026-12-31"
+  session_max_hours: 8
+
+audit:
+  chain: witnessbound
+  log_every_action: true
