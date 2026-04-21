@@ -225,7 +225,7 @@ Interactive gate. Edit the cert. Run any action. Sub-1ms confirmed.
 ## Patent & Standards Record
 
 ```
-Patent:   GB2603013.0 (Pending) · UK IPO · Filed February 5, 2026
+Patent:   GB2603013.0 (Pending) · UK IPO · Filed February 10, 2026
 PCT:      150+ countries · Protected until August 2028
 IETF:     draft-williams-intent-token-00 · CONFIRMED LIVE
           datatracker.ietf.org/doc/draft-williams-intent-token/
@@ -234,7 +234,7 @@ NCCoE:    10 filings · AI Agent Identity & Authorization
           Most complete single-framework submission in 319 entries
 ```
 
-IBA priority date: **February 5, 2026**
+IBA priority date: **February 10, 2026**
 Glasswing/Mythos disclosure: **April 2026**
 CSA/SANS Mythos briefing: **April 12-13, 2026**
 IBA predates all known VulnOps authorization deployments.
